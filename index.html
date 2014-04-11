@@ -3,26 +3,87 @@
 	<title>mashuplife</title>
 	<link type="text/css" rel="stylesheet" href="style.css" />
 	<link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+	<script src="jquery-1.10.2.min.js"></script>
+<script>
+$(document).ready(function() {
+
+	$('#aboutme').mouseenter(function() {
+	  $('#aboutme_img').show();
+	}).mouseleave(function(){
+	    $('#aboutme_img').hide();    
+	});
+
+	$('#letsgetmessi').mouseenter(function() {
+	  $('#letsgetmessi_img').show();
+	}).mouseleave(function(){
+	    $('#letsgetmessi_img').hide();    
+	});
+
+	$('#mealmates').mouseenter(function() {
+	  $('#mealmates_img').show();
+	}).mouseleave(function(){
+	    $('#mealmates_img').hide();    
+	});
+
+	$('#giffylube').mouseenter(function() {
+	  $('#giffylube_img').show();
+	}).mouseleave(function(){
+	    $('#giffylube_img').hide();    
+	});
+
+	$('#schedule').mouseenter(function() {
+	  $('#schedule_img').show();
+	}).mouseleave(function(){
+	    $('#schedule_img').hide();    
+	});
+
+	$('#tictactoe').mouseenter(function() {
+	  $('#tictactoe_img').show();
+	}).mouseleave(function(){
+	    $('#tictactoe_img').hide();    
+	});
+
+	$('#shootout').mouseenter(function() {
+	  $('#shootout_img').show();
+	}).mouseleave(function(){
+	    $('#shootout_img').hide();    
+	});
+});
+
+</script>
+
 </head>
 <body>
 	<h1>MashupLife</h1>
 	<h2>one plus one equals for your entertainment</h2>
 	<div id="container">
 		<div id="contents">
-		<h3><a href="riocalling/index.html" target="_blank"><strong>About Me</strong></a></h3>
+		<a href="riocalling/index.html" target="_blank" id="aboutme"><strong><h3 id="about_me">About Me</h3></strong></a>
 		<h3>Ideations & Creations</h3>
-		<a href="http://www.letsgetmessi.com" target="_blank"><strong>Let's Get Messi</strong></a><p>Celebrating the art of sport.</p>
-		<a href="http://project-mealmates.herokuapp.com" target="_blank"><strong>Mealmates</strong></a><p>Eat with people who eat like you.</p>
-		<a href="http://www.giffylube.com" target="_blank"><strong>Giffylube</strong></a>
+		<a href="http://www.letsgetmessi.com" target="_blank" id="letsgetmessi"><strong>Let's Get Messi</strong></a><p>Celebrating the art of sport.</p>
+		<a href="http://project-mealmates.herokuapp.com" target="_blank" id="mealmates"><strong>Mealmates</strong></a><p>Eat with people who eat like you.</p>
+		<a href="http://www.giffylube.com" target="_blank" id="giffylube"><strong>Giffylube</strong></a>
 		<p>Whet your brain.</p>
 		<h3>World Cup Spikes</h3>
-		<a href="worldcupschedule/index.html" target="_blank"><strong>Group Stage Schedule</strong></a>
+		<a href="worldcupschedule/index.html" target="_blank" id="schedule"><strong>Group Stage Schedule</strong></a>
 		<br />
-		<a href="tictactoe/index.html" target="_blank"><strong>Tic Tac Toe</strong></a>
+		<a href="tictactoe/index.html" target="_blank" id="tictactoe"><strong>Tic Tac Toe</strong></a>
 		<br />
-		<a href="worldcupshootout/index.html" target="_blank"><strong>PK Shoot-Out!</strong></a>
+		<a href="worldcupshootout/index.html" target="_blank" id="shootout"><strong>PK Shoot-Out!</strong></a>
 		<br />
 		</div>
+		<div id="viewer">
+			<img src="img/aboutme.png" id="aboutme_img">
+			<img src="img/letsgetmessi.png" id="letsgetmessi_img">
+			<img src="img/giffylube.png" id="giffylube_img">
+			<img src="img/mealmates.png" id="mealmates_img">
+			<img src="img/schedule.png" id="schedule_img">
+			<img src="img/tictactoe.png" id="tictactoe_img">
+			<img src="img/shootout.png" id="shootout_img">
+		</div>
 	</div>
+	<span id="art_credit">David Hockney's Mulholland Drive<span></footer>
 </body>
 </html>
+
+
