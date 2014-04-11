@@ -10,8 +10,16 @@ $(document).ready(function() {
 	$('#aboutme').mouseenter(function() {
 	  $('#aboutme_img').show();
 	}).mouseleave(function(){
-	    $('#aboutme_img').hide();    
+	    $('#aboutme_img').hide();  
 	});
+
+  $('#aboutme').mouseenter(function() {
+  	$('#name_text', this).show();
+  	$('#aboutme_text', this).hide();
+  }).mouseleave(function() {
+  	$('#name_text', this).hide();
+  	$('#aboutme_text', this).show();
+  });
 
 	$('#letsgetmessi').mouseenter(function() {
 	  $('#letsgetmessi_img').show();
@@ -58,7 +66,10 @@ $(document).ready(function() {
 	<h2>one plus one equals for your entertainment</h2>
 	<div id="container">
 		<div id="contents">
-		<a href="riocalling/index.html" target="_blank" id="aboutme"><strong><h3 id="about_me">About Me</h3></strong></a>
+		<a href="riocalling/index.html" target="_blank" id="aboutme">
+			<div id="aboutme_text"><strong><h3 id="about_me">About Me</h3></strong></div>
+			<div id="name_text"><strong><h3 id="about_me">Kate Bankert</h3></strong></div>
+		</a>
 		<h3>Ideations & Creations</h3>
 		<a href="http://www.letsgetmessi.com" target="_blank" id="letsgetmessi"><strong>Let's Get Messi</strong></a><p>Celebrating the art of sport.</p>
 		<a href="http://project-mealmates.herokuapp.com" target="_blank" id="mealmates"><strong>Mealmates</strong></a><p>Eat with people who eat like you.</p>

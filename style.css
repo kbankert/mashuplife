@@ -45,6 +45,10 @@ h3#about_me:hover {
   color: rgb(253, 181, 66);
 }
 
+div#name_text {
+  display: none;
+}
+
 p {
 	font-family: "Century Gothic";
 	font-size: 14px;
