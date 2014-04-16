@@ -85,7 +85,7 @@ p {
 #viewer img {
   display: none;
   max-height: 100%;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   border-radius: 5px;
 }
 
